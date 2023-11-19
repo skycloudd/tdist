@@ -1,0 +1,16 @@
+name = "Testing task"
+repeat = 2
+
+[[command]]
+shell = "$(exit 1)"
+ignore_failure = true
+
+[[command]]
+shell = "sleep 1"
+parallel = true
+
+[[command]]
+shell = "sleep 1"
+
+[[command]]
+shell = "echo hello world"
